@@ -17,12 +17,13 @@ Libraries:
 [cgmath]: https://github.com/brendanzab/cgmath
 [time]: https://github.com/rust-lang-deprecated/time
 
-The examples build with cargo:
-
-``` bash
-cargo run --example tutorial04
-```
 
 ## Screenshot
 
 ![Flowmap Example](screenshot.png)
+
+The examples build with cargo:
+
+``` bash
+cargo run --example main
+```
