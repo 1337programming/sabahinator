@@ -1,0 +1,54 @@
+[package]
+name = "sabahinator"
+version = "0.1.0"
+license = "MIT"
+
+[dependencies]
+log = "0.3"
+env_logger = "0.4"
+glutin = "0.9"
+winit = "0.7"
+
+cgmath = "0.15"
+gfx_gl = "0.3"
+rand = "0.3"
+genmesh = "0.5"
+noise = "0.4"
+
+gfx = { path = "./gfx/src/render", version = "0.16" }
+gfx_core = { path = "./gfx/src/core", version = "0.7.1" }
+gfx_corell = { path = "./gfx/src/corell", version = "0.1" }
+gfx_support = { path = "./gfx/src/support", version = "0.7" }
+
+gfx_device_gl = { path = "./gfx/src/backend/gl", version = "0.14", optional = true }
+gfx_window_glutin = { path = "./gfx/src/window/glutin", version = "0.17", optional = true }
+
+
+[dependencies.image]
+version = "*"
+default-features = false
+features = ["png_codec"]
+
+[[example]]
+name = "main"
+path = "src/main.rs"
+
+[[example]]
+name = "tutorial01"
+path = "examples/tutorial01/main.rs"
+
+[[example]]
+name = "tutorial02"
+path = "examples/tutorial02/main.rs"
+
+[[example]]
+name = "tutorial03"
+path = "examples/tutorial03/main.rs"
+
+[[example]]
+name = "tutorial04"
+path = "examples/tutorial04/main.rs"
+
+[[example]]
+name = "tutorial05"
+path = "examples/tutorial05/main.rs"

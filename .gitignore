@@ -1,0 +1,14 @@
+# Junk
+.DS_Store
+.vscode/
+.#*
+
+# Compiled
+/doc
+target/
+
+# Service
+Cargo.lock
+*.swp
+
+/.idea
